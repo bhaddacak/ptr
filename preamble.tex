@@ -1,0 +1,99 @@
+%%=== comment these 2 lines when using LuaLaTeX ===%%
+%~ \usepackage[T1]{fontenc}
+%~ \usepackage[utf8]{inputenc}
+%%======================%%
+\usepackage[english]{babel}
+\usepackage{lmodern}
+%~ \usepackage{natbib}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{ulem}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{paralist}
+\usepackage{enumitem}
+\usepackage{bigdelim}
+\usepackage{amssymb}
+\usepackage[hyperref]{xcolor}
+\usepackage[colorlinks,linktocpage=true,plainpages=false,breaklinks=true,%
+urlcolor=darkgray,citecolor=blue,linkcolor=darkgray,filecolor=teal]{hyperref}
+%%=== using chicago biblatex ===%%
+%% Do not forget to disable natbib above.
+\usepackage[autostyle]{csquotes}
+\usepackage[authordate,strict,natbib,backend=biber,autolang=none,%
+bibencoding=latin1,booklongxref=bib,compresspages]{biblatex-chicago}
+\bibliography{bibliography}
+%
+%%=== custom counters ===%%
+\newcounter{sennum}
+\newcounter{parnum}
+%%=== commands new/renewed/define ===%%
+\newcommand{\smallindent}{\hspace{3mm}}
+\newcommand{\pali}[1]{\textit{#1}}
+\newcommand{\palibf}[1]{\textit{\bfseries #1}}
+%% marginal notes are not used in this version
+%~ \newcommand{\onmargin}[1]{\marginpar{\RaggedRight\textcolor{blue}{$\triangleright$#1}}}
+%~ \newcommand{\palimg}[1]{\pali{#1}\onmargin{\pali{#1}}}
+\newcommand{\replacewith}[2]{\xout{#1}$\rightarrow$#2}
+\newcommand{\remove}[1]{\sout{#1}}
+\newcommand{\pchangeto}[2]{\pali{#1} $\rightarrow$ \pali{#2}}
+\newcommand{\texthl}[1]{\textcolor{blue}{#1}}
+\newcommand{\headhl}[1]{\textit{#1}}
+\newcommand{\palisample}[1]{%
+	\begin{center}
+	\large \itshape #1
+	\end{center}
+}
+\newcommand{\sampleor}[1][or]{\\\textup{\normalsize #1}\\}
+\newcommand{\seprule}{%
+	\begin{center}
+	\rule{0.4\linewidth}{0.6pt}
+	\end{center}
+}
+%% for refering to external documents
+\newcommand{\externalref}[1]{#1}
+%%=== used with enumitem ===%%
+\newlist{answerkey}{enumerate}{1}
+\setlist[answerkey]{
+	label=\arabic*.,
+	ref=\arabic*,
+	itemsep=0ex,
+	parsep=0ex,
+	font=\upshape,
+	before={\RaggedRight\itshape}
+}
+%%=== used in longtable ===%%
+\newcommand{\ltblcontinuedbreak}[1]{%
+	\multicolumn{#1}{r}{Continued on the next page\ldots}\\
+}
+%
+%%=== For footnotes ===%%
+\deffootnote[5mm]{0em}{1em}{%
+  \textsuperscript{\thefootnotemark}%
+}
+%%=== Making equal side margins ===%%
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{0mm}
+%%==============%%
+\hypersetup{
+	pdfinfo={
+		Title={Pali Text Reading: A Handbook},
+		Author={J. R. Bhaddacak},
+		Subject={Pali language},
+		Keywords={Pali;Theravada;Buddhism}
+	}
+}
+%%==============%%
+%
+%~ \includeonly{title,copyright,preface,abbrev}
+%%==============%%
+\begin{document}
+\normalem
+\frontmatter
+
