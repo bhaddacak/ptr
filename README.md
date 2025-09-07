@@ -40,6 +40,6 @@ Here are Pāli characters with diacritics used in the source files. (The upperca
 
 ## Notes on licensing
 
-Form version 3.0 onward, the *GNU Free Documentation License* is applied to the work. This means the LaTeX source files will be always publicly available and amendable. Now the work belongs to the public. To help editing the book in the main branch, please use the *pull request* mechanism.
+From version 3.0 onward, the *GNU Free Documentation License* is applied to the work. This means the LaTeX source files will be always publicly available and amendable. Now the work belongs to the public. To help editing the book in the main branch, please use the *pull request* mechanism.
 
 Apart from the strict license used, I also allow derivative works, possibly translations and partial compositions, to be relicensed to *Creative Commons Attribution-ShareAlike 4.0 International License* (CC-BY-SA) provided that the LaTeX source files are not used.
